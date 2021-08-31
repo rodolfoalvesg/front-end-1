@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    background-image: url('./vingadores.jpg');
+    background-position: center;
+    background-size: cover;
+    width:1280;
+    height:720px;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    font-size:50px;
+    color: rgb(224, 228, 21);
+    margin: 0;
+    text-shadow: 2px 2px #ff0000;
+    padding-top: 280px;
+}
+
+h2{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    display: block;
+    width: 300px;
+    height: 40px;
+    background-color: #e21f11;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
