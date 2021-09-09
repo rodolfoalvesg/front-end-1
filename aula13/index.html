@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aula 13 - CSS</title>
+</head>
+<body>
+    <header>
+        
+        <img src="https://falandoemfinancas.com.br/wp-content/uploads/2020/08/contato-png.png" alt="logo de contato">
+        <h1>Formulário de Contato</h1>
+        
+    </header>
+    
+    <main>
+        <form>
+            <section>
+                <input type="text" name="name" class="name" placeholder="Nome" required>
+            </section>
+
+            <section>
+                <select name="options"  class="options" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="1">Suporte</option>
+                    <option value="2">Financeiro</option>
+                    <option value="3">Administrativo</option>
+                    <option value="4">RH</option>
+                </select>
+            </section>
+            
+            <section>
+                <textarea name="description" class="description" placeholder="Descreva sua dúvida" required>
+
+                </textarea>
+            </section>
+            
+
+            <button type="submit" class="enviar">Enviar</button>
+            <button type="reset" class="limpar"> Limpar Formulário</button>
+        </form>
+    </main>
+
+</body>
+</html>
