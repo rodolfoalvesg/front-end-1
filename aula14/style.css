@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6D3A3;
+}
+
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-bottom: 30px;
+}
+
+main{
+    width: 80%;
+    display: flex;;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+main .products, .complements{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    min-height: 400px;
+}
+
+main .complements{
+    flex-direction: column;
+}
+
+main .products div{
+    display: flex;
+    width: 48%;
+    height: 180px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;   
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 3px rgb(160, 159, 159);
+    position: relative;
+    
+}
+
+main .products div h2{
+    color: rgba(253, 253, 253, 0.733);
+    text-shadow: 1px 1px 1px #f59d9d;
+    font-size: 28px;
+}
+
+main .products .candy-1{
+    background-image: url('https://s2.glbimg.com/quwqrYKCCKel3KB_cJnZvIqxE0c=/620x455/e.glbimg.com/og/ed/f/original/2019/06/11/acai.jpg');
+    
+}
+main .products .candy-2{
+    background-image: url('https://s2.glbimg.com/e7Pq5xT_WC1su1Wu29Y7GClXYyg=/0x0:652x408/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/7/9/jeDVVATiAdAVd6CxfAZg/mousse-de-chocolate.jpg');
+}
+main .products .candy-3{
+    background-image: url('https://t1.rg.ltmcdn.com/pt/images/9/7/8/img_doce_de_mamao_verde_1879_600_square.jpg');
+}
+main .products .candy-4{
+    background-image: url('https://pilotandofogao.com.br/wp-content/uploads/2016/06/1-25-1024x683.jpg');
+}
+
+main .products .candy-5{
+    background-image: url('https://t1.rg.ltmcdn.com/pt/images/0/0/4/img_doce_de_goiaba_cremoso_3400_orig.jpg');
+}
+
+main .products .candy-6{
+    background-image: url('https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-compota-manga-canela.jpg?quality=85&strip=info');
+}
+
+.option-candy{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: scale(2);
+}
+
+.description{
+    display: none;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.candy-1:hover .description{
+    display: block;
+}
+
+.candy-2:hover .description{
+    display: block;
+}
+.candy-3:hover .description{
+    display: block;
+}
+.candy-4:hover .description{
+    display: block;
+}
+
+.candy-5:hover .description{
+    display: block;
+}
+
+.candy-6:hover .description{
+    display: block;
+}
+
+form{
+    width:90%;
+}
+
+legend{
+    font-size: 22px;
+    color: rgb(138, 106, 0);
+    font-weight: bold;
+    text-shadow: 1px 1px #664900;
+}
+
+.box-1, .box-2, .box-3{
+ 
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 0 4px 1px #666;
+}
+
+
+#qtd, #pagto, #nome, #cpf, #email, #cep{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #664900;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: #02a84d;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 4px 1px #666;
+}
+
+.reset{
+    background-color:#c91d26;
+}
+
+hgroup{
+    box-shadow: 0 0 5px 1px #664900;
+    border-radius: 50%;
+}
+
+hgroup h1{
+    color: #664900;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+hgroup h3{
+    font-size: 14px;
+    text-align: center;
+}

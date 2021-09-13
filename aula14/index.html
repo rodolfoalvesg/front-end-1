@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">,
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 14 - Formularios</title>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Central do Doces</h1>
+            <h3>Adocicando a sua felicidade!</h3>
+        </hgroup>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="candy-1">
+                <h2>Açai</h2>
+                <p class="description">Lorem ipsum dolor</p>
+                <input type="checkbox" name="option1" class="option-candy">
+            </div>
+
+            <div class="candy-2">
+                <h2>Doce de Chocolate</h2>
+                <p class="description">Lorem ipsum dolor</p>
+                <input type="checkbox" name="option1" class="option-candy">
+            </div>
+
+            <div class="candy-3">
+                <h2>Doce de Chocolate</h2>
+                <p class="description">Lorem ipsum dolor</p>
+                <input type="checkbox" name="option1" class="option-candy">
+            </div>
+
+            <div class="candy-4">
+                <h2>Doce de Chocolate</h2>
+                <p class="description">Lorem ipsum dolor</p>
+                <input type="checkbox" name="option1" class="option-candy">
+            </div>
+            
+            <div class="candy-5">
+                <h2>Doce de Goiaba</h2>
+                <p class="description">Lorem ipsum dolor</p>
+                <input type="checkbox" name="option1" class="option-candy">
+
+            </div>
+
+            <div class="candy-6">
+                <h2>Doce de Manga</h2>
+                <p class="description">Lorem ipsum dolor</p>
+                <input type="checkbox" name="option1" class="option-candy">
+            </div>
+        </section>
+
+        <section class="complements">
+            <form method="POST" action="">
+                <fieldset class="box-1">
+                    <legend>Complemento do Pedido</legend>
+                    <section>
+                        <label for="qtd"><strong>Quantidade de doces por escolha:</strong></label>
+                        <input type="number" name="qtd" id="qtd" min="1" max="10" value="1">
+                        
+                    </section>
+
+                    <section>
+                        <h4>Doces e Balas?</h4>
+                        <input type="radio" name="extra1" id="extra1"><label for="extra1">Sim</label>
+                        <input type="radio" name="extra1" id="extra2" checked> <label for="extra2">Não</label>
+                    </section>
+                    <section>
+                        <h4>Creme de Morango?</h4>
+                        <input type="radio" name="extra2" id="extra3"><label for="extra3">Sim</label>
+                        <input type="radio" name="extra2" id="extra4" checked> <label for="extra4">Não</label>
+                    </section>
+
+                    <section>
+                        <h4>Acompanhamentos Premium:</h4>
+                        <input type="checkbox" name="extra3" id="extra5"><label for="extra5">Paçocas</label>
+                        <input type="checkbox" name="extra4" id="extra6"> <label for="extra6">Creme de Nata</label>
+                        <input type="checkbox" name="extra5" id="extra7"> <label for="extra7">Amendoin</label>
+                    </section>
+
+                </fieldset>
+
+
+                <fieldset class="box-2">
+                    <legend>Informações do Usuário</legend>
+                    <section>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                    </section>
+
+                    <section>
+                        <label for="cpf">CPF </label>
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF 000.000.000-00">
+                    </section>
+
+                    <section>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </section>
+
+                    <section>
+                        <label for="cep">CEP do Endereço</label>
+                        <input type="text" name="cep" id="cep" placeholder="CEP">
+                    </section>
+                </fieldset>
+
+                <fieldset class="box-3">
+                    <legend>Informações para pagamento</legend>
+                    <label for="pagto">Pagamento</label>
+                    <select id="pagto" name="pagto">
+                        <option value="1">Pix</option>
+                        <option value="2">Dinheiro</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset" class="reset">Limpar Formulário</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
