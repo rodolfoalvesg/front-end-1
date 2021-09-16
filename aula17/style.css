@@ -1,0 +1,91 @@
+@keyframes fantasma{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+         opacity: 25%
+    }   
+    50%{
+        opacity: 50%;
+    }   
+    75%{
+        opacity: 75%
+    }   
+    100%{ 
+        transform: translateX(600px); opacity: 100%
+    }
+}
+
+@keyframes golfe{
+    0%{
+        opacity: 100%;
+    }
+    95%{
+        opacity: 90%;
+    }
+    100%{ 
+        transform: translate(-180px, 267px); opacity: 0%
+    }
+}
+
+figure img{
+    width: 200px;
+}
+
+.fantasma{
+    animation: fantasma 4s infinite
+}
+
+section{
+    
+    width: 400px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+}
+
+section .taco{
+    width: 150px;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    transition-duration: 0.5s;
+    
+}
+
+section .taco:hover{
+    
+    transform: rotate( 30deg)
+}
+
+
+section .bola{
+    width:30px;
+    position: absolute;
+    top: 170px;
+    right: 160px;
+    animation: golfe 3s
+}
+
+
+section .buraco{
+    width:50px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 20px;
+}
+
+button{
+    background-color:#3e8100;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border: none;  
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background-color: #254d00;
+}
