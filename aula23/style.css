@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: #112031;
+    color: #c0bdbd
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+header nav{
+    background: linear-gradient(#112031, #253a53) ;
+    box-shadow: 0 0 1px 2px rgb(182, 182, 182);
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+ }
+ header nav ul a li{
+    padding: 20px 20px;
+    color: #ece8e8;
+    transition-duration: 0.5s;
+ }
+
+ header nav ul a li:hover{
+     background-color: #456185 ;
+     color: #0e1b2b;
+ }
+
+ #banner{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: calc(100vh - 58px);
+     background:url('https://img.elo7.com.br/product/zoom/2662892/banner-painel-festa-aniversario-campo-futebol-bola-esporte-paine-lona-infantil.jpg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 0 40px;
+ }
+
+ #banner h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px #112031;
+    
+ }
+
+ main{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ main section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 300px;
+    border-right: 1px solid #e2d6d6;
+    padding: 10px 20px;
+ }
+
+ main section h2{
+    margin: 20px 0;
+ }
+
+
+ @media (max-width: 768px) {
+    main section{
+        width: 100%;
+        padding: 10px 20px;
+     }
+
+     #banner h1{
+        font-size: 35px;
+        
+     }
+ }
+
+ @media (max-width: 375px) {
+    header nav ul a li{
+        padding: 20px 10px;
+    }
+ }
