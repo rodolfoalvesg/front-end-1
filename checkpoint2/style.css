@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FACE7F;
+    
+}
+
+header #logo{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F9D5A7;
+    margin: 10px 0;
+    box-shadow: 0px 0px 1px 5px #FF616D;
+}
+
+header #logo h1{
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 1px 2px #FF616D;
+}
+
+header #logo h3{
+    margin-bottom: 20px;
+    color: #FF616D;
+    text-shadow: 1px 1px #fff;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #FF616D;
+    width: 100vw;
+    
+
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #dddada;
+}
+
+nav ul a li{
+    padding: 10px 20px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    color: #fff;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/b/be/Pedra_do_Ing%C3%A1_-_s%C3%ADtio_arqueol%C3%B3gico.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 149px);
+   
+}
+
+#banner h2{
+    text-align: center;
+    opacity: 0.9;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+main>h2{
+    width: 90%;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+main #main{
+    display: flex;
+    width: 100%;
+}
+
+main #main .about, .video{
+    width: 50%;
+    min-height: 200px;
+    padding: 0 20px; 
+    text-align: justify;
+}
+
+#main .about h2{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#main .video h2{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+#main .video iframe{
+    width: 100%;
+    height: 400px;
+}
