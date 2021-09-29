@@ -70,6 +70,11 @@ nav ul a{
 
 nav ul a li{
     padding: 10px 20px;
+    transition-duration: 0.2s;
+}
+
+nav ul a li:hover{
+    background-color: #f3828c;
 }
 
 #banner{
@@ -95,7 +100,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 main>h2{
@@ -110,6 +116,7 @@ main>h2{
 main #main{
     display: flex;
     width: 100%;
+    
 }
 
 main #main .about, .video{
@@ -135,4 +142,130 @@ main #main .about, .video{
 #main .video iframe{
     width: 100%;
     height: 400px;
+}
+
+#photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FACE7F;
+    height: auto;
+}
+
+#photos>h2{
+    width: 90%;
+    color: #050000;
+    border-bottom: 2px solid #000000;
+    margin: 20px 0;
+    text-align: center; 
+} 
+
+#photos section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#photos section figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    height: 250px;
+    box-shadow: 0 0 1px 2px #000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    transition-duration: 1s;
+}
+
+#photos section figure:hover{
+    transform: scale(1.1);
+}
+
+
+#photos section figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#photos section figure figcaption{
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 10px;
+    opacity: 0.7;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 10px 40px;
+
+}
+
+
+#contact .forms, .maps{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border: 1px solid red;
+}
+
+#contact .forms{
+    align-items: center;
+}
+
+#contact .maps iframe{
+    width: 100%;
+    min-height: 400px;
+}
+
+
+#contact .forms .form-idem{
+    width: 99%;
+    margin: 5px  0 20px 0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+#contact .forms .form-idem:hover{
+    transform: scale(1.09);
+}
+
+#contact .forms p{
+    margin-bottom: 5px;
+}
+
+.form-idem:focus{
+    background-color: #B1E693;
+    color: #000;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.form-select{
+    margin: 10px 0;
+}
+
+.submit{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #6ECB63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-top: 30px;
+}
+
+.submit:hover{
+    background-color: #82d679;
 }

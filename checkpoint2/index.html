@@ -18,16 +18,16 @@
     
     <nav>
         <ul>
-            <a href="#">
+            <a href="#logo">
                 <li>Home</li>
             </a>
-            <a href="#">
+            <a href="#sobre">
                 <li>Sobre</li>
             </a>
-            <a href="#">
+            <a href="#sobre">
                 <li>Vídeo</li>
             </a>
-            <a href="#">
+            <a href="#photos">
                 <li>Fotos</li>
             </a>
             <a href="#">
@@ -43,7 +43,7 @@
     </section>
 
 
-    <main>
+    <main id="sobre">
         <h2>Sobre a Cidade</h2>
         <section id="main">
             <div class="about">
@@ -83,30 +83,89 @@
             </div>
         </section>
 
-        <section id="photos">
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-            <figure>
-                <figcaption></figcaption>
-            </figure>
-        </section>
-
     </main>
 
+    <section id="photos">
+        <h2>Fotos da Cidade</h2>
+        <section>
+            <figure>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/a1/8f/4c/inga-pb.jpg" alt="Escultura com símbolo das itacoatiaras">
+                <figcaption>Monumento Itacoatiaras</figcaption>
+            </figure>
+            <figure>
+                <img src="https://paraiba.pb.gov.br/noticias/circulando-chega-a-inga-neste-sabado-com-cinema-e-oficinas-de-arte/inga.png/@@images/bc696ce8-32fb-4790-8b0e-3fdb5ac5da3f.png" alt="Praça Principal">
+                <figcaption>Praça principal</figcaption>
+            </figure>
+            <figure>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/48/d5/7a/pedra-do-inga.jpg" alt="Igreja Matriz">
+                <figcaption>Igreja Matriz</figcaption>
+            </figure>
+            <figure>
+                <img src="https://lh3.googleusercontent.com/proxy/xRn8ZDnU6X-4qV-48UfhBWVeHbqIGS2_ObMdR3v3_BkN8w-1ARnKp-YIXHU9xLZ8YgPJu_KZqBKdtcmJVBrgWtxbmufh1wFMehz9Lvohnppj0T9HrzJdjJZDE_BTfADbtbew2mmqUKPkcpU5aL5nGFQFJYBYW8OeL7NB-IahAmiv-PtJxU1a3y_oxFZAleVCJWVJOQxacLlyI_9T09Mdxe_wXrE4cldwHjw" alt="Gravuras na pedra">
+                <figcaption>Itacoatiaras</figcaption>
+            </figure>
+            <figure>
+                <img src="http://2.bp.blogspot.com/_jafVYp3hbZU/Sn2KhTUl6UI/AAAAAAAAAU8/QevjY-QDC9E/s400/fotos+%C3%A1ereas+da+cidadede+de+ing%C3%A1+03.jpg" alt="vista aerea ingá pb">
+                <figcaption>Vista aerea</figcaption>
+            </figure>
+            <figure>
+                <img src="http://2.bp.blogspot.com/_14Uhd4iRwEU/S_WKYnsUuTI/AAAAAAAAAlQ/3HNMoDmQkPs/s1600/100_4144.jpg" alt="Fotos museu ingá pb">
+                <figcaption>Museu do dinossauro</figcaption>
+            </figure>
+        </section>
+    </section>
+
     
+    <section id="contact">
+        <section class="forms">
+            <form>
+                <section>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-idem" name="nome" id="nome" maxlength="100" placeholder="Nome Completo">
+                </section>
+
+                <section>
+                    <label for="email">Endereço de e-mail</label>
+                    <input type="email" class="form-idem" name="email" id="email" placeholder="Email">
+                </section>
+
+                <section>
+                    <label for="tel">Telefone de contato</label>
+                    <input type="tel" class="form-idem" name="telefone" id="tel" placeholder="Telefone">
+                </section>
+                <section>
+                    <label for="data">Data da visita</label>
+                    <input type="date" class="form-idem" name="date" id="data">
+                </section>
+                <section class="form-select">
+                    <p>É maior de idade?</p>
+                <input type="radio" name="maior" id="sim"><label for="sim">Sim</label>
+                <input type="radio" name="maior" id="nao"><label for="nao">Não</label>
+                </section>
+                <section>
+                    <label for="ponto">Seleciona um ponto turístico: </label>
+                    <select name="ponto" class="form-idem" id="ponto">
+                        <option value="1">Pedras Itacoarias</option>
+                        <option value="2">Igreja Matriz</option>
+                        <option value="3">Museu do Dinossauro</option>
+                    </select>
+                </section>
+                <section class="form-select">
+                    <p>Selecione o seu perfil de visitante: </p>
+                    <input type="checkbox" name="turista" id="t"> <label for="t">Turista</label>
+                    <input type="checkbox" name="residente" id="r"> <label for="r">Residente</label>
+                    <input type="checkbox" name="estudante" id="e"> <label for="e">Estudante</label>
+                </section>
+                
+                <button class="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15830.248332960895!2d-35.61700638071252!3d-7.290561015806552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac13796b6fc32b%3A0x5cc6e39496275e4!2zSW5nw6EsIFBC!5e0!3m2!1spt-BR!2sbr!4v1632932175190!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </section>
+
+
     <footer>
 
     </footer>
