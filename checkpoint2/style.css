@@ -203,8 +203,7 @@ main #main .about, .video{
 #contact{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    height: 100vh;
+    height: auto;
     padding: 10px 40px;
 
 }
@@ -214,11 +213,11 @@ main #main .about, .video{
     display: flex;
     flex-direction: column;
     width: 45%;
-    border: 1px solid red;
 }
 
 #contact .forms{
     align-items: center;
+    
 }
 
 #contact .maps iframe{
@@ -268,4 +267,74 @@ main #main .about, .video{
 
 .submit:hover{
     background-color: #82d679;
+}
+
+.maps>h2, .forms>h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+footer{
+    background-color: #FACE7F;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+footer img{
+    width: 50px;
+    transition-duration: 0.3s;
+    opacity: 0.5;
+}
+
+footer img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+@media (max-width: 768px){
+    main #main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    main #main .about, .video{
+        width: 90%;
+        min-height: 200px;
+        padding: 0 20px; 
+        text-align: justify;
+    }
+
+    #photos section figure{
+        width: 40%;
+    }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .forms, .maps{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    #photos section figure{
+        width: 80%;
+    }
+    
 }
