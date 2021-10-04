@@ -17,8 +17,14 @@
     color: var(--fourth-color);
 }
 
+.navbar-toggler{
+    border:3px solid rgb(255, 255, 255);
+    color: var(--fourth-color);
+}
 
-
+.navbar-toggler img{
+    width: 30px;
+}
 
 
 
