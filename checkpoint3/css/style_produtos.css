@@ -1,0 +1,86 @@
+@keyframes arrow {
+    0%   {opacity: 0; left:0px; }
+    25%  {opacity: .2; left:6px;}
+    50%  {opacity: .5; left:12px;}
+    75%  {opacity: .8; left:18px;}
+    100% {opacity: 1; left:30px;}
+}
+
+.main{
+    padding: 0;
+    margin: 0;
+    margin-top: 90px;
+}
+
+.main figure{
+    margin: 0;
+}
+
+.main figure img{
+    width: 100%;
+}
+
+.main .h1{
+    text-align: center;
+    color: #1BA1C0;
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.main .h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.products{
+    padding: 0 40px ;
+    margin: 40px 0;
+}
+
+.box-product{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow:hidden;
+    position: relative;
+}
+
+.box-product .img-product{
+    object-fit: cover;
+    transition: all 1000ms ease-in-out;
+
+}
+
+.box-product .img-product:hover{
+    transform: scale(1.08);
+}
+
+.box-product .product-box-link{
+    position: absolute;
+    width: 100%;
+    padding: 40px;
+    background-color: #B21F89;
+    color: #fff;
+    bottom: 0;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.box-product:hover .product-box-link{
+    opacity: 0.8;
+}
+
+.box-product .product-box-link .arrow-left{
+    transition: all 1s ease;
+    position: relative;
+    left: 30px;
+    height: 30px;
+}
+
+.box-product:hover .product-box-link .arrow-left{
+    position: relative;
+    animation-name: arrow;
+    animation-duration: 1s ;
+}
+
