@@ -1,3 +1,5 @@
+
+
 :root{
     --primary-font: 'Roboto';
     --primary-color: #B21F89;
@@ -33,10 +35,12 @@
 .bg-header{
     background-color: var(--primary-color);
     padding: 20px 20px;
+    
 }
 
 .logo-main img{
     width: 120px;
+    
 }
 
 .nav-item{
@@ -98,3 +102,44 @@
 }
 
 
+/*************** CAROUSEL ******************/
+/******************** SLIDER ***************************/
+
+.container2{
+    padding: 0;
+}
+
+.main-carousel{
+margin:0;
+margin-top: 90px;
+padding: 0;
+
+}
+.carousel-img{
+    height:auto;
+    position:relative;
+}
+.carousel-btn{
+    position:absolute;
+    bottom: 100px;
+    left: 120px;
+    padding:10px 40px;
+    background-color: #F27626;
+    text-decoration:none ;
+    color:#fff;
+    transition-duration: 0.5s;
+}
+.carousel-btn:hover{
+    background-color: #E63770;
+    color: #fff;
+}
+.carousel{
+height: auto;
+margin:0;
+padding: 0;
+}
+
+.carousel-img img{
+    max-height: calc(100vh - 90px);
+    object-fit: cover;
+}

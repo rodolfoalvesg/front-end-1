@@ -1,1 +1,76 @@
 /************** login page ***********/
+
+
+.main-login{
+    background:linear-gradient(to left,  #cf6a27, #ad3a8d, #b93694);
+    padding: 0;
+    margin: 0;
+    margin-top: 90px;
+}
+
+
+.container-login .cols{
+    padding: 0 30px;
+}
+
+.container-login .cols .h2{
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.container-login .cols .link-login{
+    color: #fff;
+    font-size: 24px;
+    display: block;
+}
+
+.form-login, .button-login{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 5px;
+
+}
+
+.button-login{
+    border: none;
+    background-color: #F27626;
+    color: #fff;
+    transition: 0.6s;
+    font-size: 18px;
+}
+
+.button-login:hover{
+    background-color: #DA2C6B;
+}
+
+.container-login .cols input::placeholder{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.col-line{
+    border-right: 3px solid #fff;
+}
+
+.login-top, .login-bottom{
+    width: 100%;
+
+}
+.login-top img{
+    width: 100%;
+}
+
+.login-bottom{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.login-bottom img{
+    width: 100%;
+    
+
+}
